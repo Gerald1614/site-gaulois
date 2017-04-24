@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<title>Saison typique</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./lib/w3.css">
+<link rel="stylesheet" href="./lib/w3-theme-indigo.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<link rel="stylesheet" type="text/css" href="./lib/custom_css.css" />
+<link rel="icon" type="image/png" href="./images/LogoGaulois_256.png" />
+
+<section class="timeline">
+  <ul>
+    <li>
+      <div>
+        <time>Février-Mars</time> Préparation de la saison. Organisation de quelques événnements sociaux (Festin des Gaulois, tournoi de rugby des six Nations, week-end de cohésion...)
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Mars-Avril</time> Démarrage des pratiques en gymnase intérieur. Excellente période pour venir essayer le rugby et s'initier au sport. Les pratiques ont lieu les dimanches de 2pm à 4 pm au gymnase du Centre Saint Denis (coin Rivard et Laurier sur le Plateau Mont-Royal)
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>le 2 avril</time> Première participation du rugby aux jeux de Montreal.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>à partir de mi-avril</time>Démarrage des pratiques extérieurs au parc du Père Marquette (Sur Rosemont) les samedis matin de 9h30 à 11h30
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Juin-Aout</time> Période des jamborées et championnats (u16 et u18). Les tournois se jouent souvent les dimanches.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Septembre</time> Week-end de cloture de saison (en 2016 à Mont Tremblant)
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Septembre à Novembre</time>Pratiques pour les U14 et juniors volontaires.
+      </div>
+    </li>
+  </ul>
+</section>
+</body>
+<script>
+(function() {
+
+  'use strict';
+
+  // define variables
+  var items = document.querySelectorAll(".timeline li");
+
+  // check if an element is in viewport
+  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function callbackFunc() {
+    for (var i = 0; i < items.length; i++) {
+//      if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
+//      }
+    }
+  }
+
+  // listen for events
+  window.addEventListener("load", callbackFunc);
+  window.addEventListener("resize", callbackFunc);
+  window.addEventListener("scroll", callbackFunc);
+
+})();
+</script>
+</html>

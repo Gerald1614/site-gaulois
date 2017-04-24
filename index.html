@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Club de rugby des Gaulois</title>
+<meta charset="UTF-8">
+<meta name="description" content="école de rugby basée à Montreal destinée aux enfants de 5 à 18 ans">
+<meta name="keywords" content="rugby, ecole, school, montreal, rookie rugby, quebec">
+<meta name="author" content="Gerald Michelant">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./lib/w3.css">
+<link rel="stylesheet" href="./lib/w3-theme-indigo.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./lib/custom_css.css" />
+<link rel="icon" type="image/png" href="./images/Logo-Rugby-Gaulois-RVB.png" />
+<script src="javascript/index.js"></script>
+</head>
+<body id="myPage" class="w3-theme-d4">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <ul class="w3-navbar w3-theme-d2 w3-left-align">
+  <li class="w3-hide-large w3-opennav w3-right">
+    <a class="w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="#" class="w3-teal"><i class="fa fa-home w3-margin-right"></i>École de Rugby les Gaulois</a></li>
+  <li class="w3-hide-small w3-hide-medium "><a href="#rugby" class="w3-hover-white">Le rugby</a></li>
+  <li class="w3-hide-small w3-hide-medium "><a href="#gaulois" class="w3-hover-white">Les Gaulois</a></li>
+  <li class="w3-hide-small w3-hide-medium "><a href="#inscriptions" class="w3-hover-white">Inscriptions</a></li>
+  <li class="w3-hide-small w3-hide-medium "><a href="#contact" class="w3-hover-white">Contact</a></li>
+  <li class="w3-hide-small w3-hide-medium "><a onclick="document.getElementById('idsaison').style.display='block'"  style="cursor:pointer;" class="w3-hover-white">Horaires</a></li>
+  <li class="w3-hide-small w3-hide-medium w3-dropdown-hover">
+    <a href="#">Chartes <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="./charte_joueur.html" target="_blank">Charte du joueur</a>
+      <a href="./charte_coach.html" target="_blank">Charte de l'éducateur</a>
+      <a href="./charte_parent.html" target="_blank">Charte des parents</a>
+    </div>
+  </li>
+<li class="w3-hide-small w3-hide-medium "><a onclick="document.getElementById('idcalendrier').style.display='block'"  style="cursor:pointer;" class="w3-hover-white">Calendrier</a></li>
+  <li class="w3-hide-small w3-hide-medium w3-right"><a href="./commandites.html" target="_blank" class="w3-hover-teal" title="nos partenaires">Commandites</a></li>
+ </ul>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-hide w3-hide-large">
+    <ul class="w3-navbar w3-left-align w3-theme">
+      <li><a href="#rugby">Le rugby</a></li>
+      <li><a href="#gaulois">Les gaulois</a></li>
+      <li><a href="#inscriptions">Inscriptions</a></li>
+      <li><a href="#contact">Contact</a></li>
+        <li><a onclick="document.getElementById('idsaison').style.display='block'" >Horaires</a></li>
+          <li><a onclick="document.getElementById('idcalendrier').style.display='block'" >Calendrier</a></li>
+      <li><a href="./commandites.html">Commandites</a></li>
+      <li class="w3-dropdown-hover">
+      <a href="javascript:void(0);" title="Notifications">Chartes <i class="fa fa-caret-down"></i></a>
+      <div class="w3-dropdown-content w3-light-grey w3-card-4">
+        <a href="./charte_joueur.html" target="_blank">Charte du joueur</a>
+        <a href="./charte_coach.html" target="_blank">Charte de l'éducateur</a>
+        <a href="./charte_parent.html" target="_blank">Charte des parents</a>
+      </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- Modal saison-->
+<div id="idsaison" class="w3-modal">
+<div class="w3-modal-content w3-card-8 w3-animate-top">
+  <header class="w3-container w3-teal">
+    <span onclick="document.getElementById('idsaison').style.display='none'" class="w3-closebtn"><i class="fa fa-remove"></i></span>
+  <h2>Déroulement de la saison</h2>
+  </header>
+  <div class="w3-container">
+    <iframe src="./saison.html" width="100%" height="1700" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours&amp;#8230;</iframe>
+  </div>
+</div>
+</div>
+
+
+<!-- Modal calendrier-->
+<div id="idcalendrier" class="w3-modal">
+<div class="w3-modal-content w3-card-8 w3-animate-top">
+  <header class="w3-container w3-teal">
+    <span onclick="document.getElementById('idcalendrier').style.display='none'" class="w3-closebtn"><i class="fa fa-remove"></i></span>
+  </header>
+  <div class="w3-container">
+    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ece6ipuodm91t02ogq8ja2ldbcedig1p%40import.calendar.google.com&amp;color=%23711616&amp;src=5c68o9dlpflkh1m9a5psiosv5s%40group.calendar.google.com&amp;color=%232F6309&amp;src=bnuee0091b9ug10bqvmvhk94s0%40group.calendar.google.com&amp;color=%238C500B&amp;src=ljvgphvgdafksm3g5iur30vl78%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FToronto" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+  </div>
+</div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="./images/20160925_101348.jpg" alt="les Gaulois à Mont Tremblant" style="width:100%;">
+    <img class="w3-display-bottomleft w3-margin-bottom w3-container" src="./images/Logo-Rugby-Gaulois-RVB.png" style="width:20%;">
+    <div class="w3-display-topleft w3-card-8 w3-round w3-padding w3-white" style="top:50px">
+    <h4 class="w3-text-indigo" style="margin:0px">Nouvelles du monde (francais) du rugby:</h4>
+    <a id="titre0"></a><br><a id="titre1"></a><br><a id="titre2"></a>
+    </div>
+    <div class="w3-display-topright w3-opacity-min w3-card-8 w3-round w3-padding w3-black rotate15 imagerotate2" style="top:100px">
+      <p><h3>Venez découvrir le rugby</h3></p>
+      <p><h3>Initiations gratuites</h3></p>
+      <p><h3>Filles et gars âgés de 5 à 18 ans</h3></p>
+    </div>
+    <a  href="http://www.sportsmontreal.com/fr/activite/camp-de-jour/camp-option-rugby_196.aspx?page=15&pn=gi%3D28%26cat%3D3" target="_blank">
+      <img class="w3-display-right w3-margin-bottom w3-container" src="./images/sportMontreal.png" style="width:10%;"></a>
+    <a  href="http://rookierugby.ca/wp-content/themes/rookierugby/img/rr_vid_french.mp4" target="_blank">
+      <img class="w3-display-bottomright w3-margin-bottom w3-container" src="./images/rookie_rugby.png" style="width:20%;"></a>
+  <div class="w3-display-bottommiddle w3-container"><p><b class="w3-indigo  w3-padding w3-text-lime">Plus grande école de rugby francophone d'Amérique du Nord</b></p><q class="w3-myfont w3-text-white w3-xxxlarge "><b>Irréductibles, indivisibles</b></q></div>
+</div>
+
+<div class="w3-col s9">
+
+
+<!-- rugby Container -->
+<div class="w3-container w3-padding-64 w3-center w3-theme-l2" id="rugby">
+<p>Bienvenue sur le site du club de rugby "Les Gaulois".
+Nous accueillons des jeunes (filles et garçons) de 5 à 18 ans afin de les initier à ce sport qui devient de plus en plus populaire tant au niveau international que provincial. Le nombre de licenciés ne cesse de croître au Québec et le club de rugby Les Gaulois participe activement à ce développement depuis de nombreuses années.
+
+Le rugby est une école de la vie fondée sur le respect des co-équipiers, des adversaires, de l’arbitre et des règles. La solidarité et l’esprit d’équipe sont considérablement renforcés au sein de l’école, donnant aux jeunes une merveilleuse plateforme pour s’épanouir et développer un sens social fort. Il faut aussi bien sûr évoquer l’engagement physique, le courage et l’abnégation qui sont si spécifiques à ce sport de contact.</p>
+
+<div class="w3-row"><br>
+<div class="w3-quarter">
+  <a  href="http://rugbyquebec.com/?page_id=279&lang=fr" target="_blank">Club affilié à :
+  <img src="./images/Logo_Rugby_Québec.png" style="width:70%;"></a>
+</div>
+<div class="w3-half">
+<iframe width="100%" src="https://www.youtube.com/embed/NK9mRb3y2IU?feature=oembed&amp;enablejsapi=1&amp;origin=http://clubrugbygaulois.com" frameborder="0" allowfullscreen="" id="ba_yt_0"></iframe>
+</div>
+<div class="w3-quarter">
+  <a  href="http://www.rugbycanada.ca/leagues/homeRugbyCanada.cfm?leagueID=0&clientID=3817&link=RugbyCanada" target="_blank">
+  <img src="./images/Rugby_Canada1_small.png" style="width:100%;"></a>
+</div>
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-container w3-padding-64 w3-theme-d5" id="gaulois">
+<h2>Les Gaulois</h2>
+<h3>La vocation de l’école et les moyens mis en oeuvre</h3>
+
+<p>La vocation de l’école est d’initier les jeunes au rugby et de leur permettre de progresser tout au long de leur "carrière". Nous accueillons les joueurs à partir de 5 ans et développons leurs connaissances et compétences rugbystiques jusqu'à ce qu'ils atteignent l'âge de 18 ans où ils pourront rejoindre un des clubs partenaires de l’école.</p>
+
+
+<h3>Les entraîneurs</h3>
+
+<p>Le club de rugby Les Gaulois dispose d’entraîneurs qualifiés qui proposent des séances adaptées à chacune des tranches d’âges (depuis les moins de 6 ans jusqu’aux moins de 18 ans par tranche de 2 ans). Ces entraînements sont basés sur des programmes bâtis par la fédération de Rugby Canada ainsi que par des fédérations de grandes nations du rugby (France, Australie,…)
+
+Cette équipe est renforcée par des bénévoles qui encadrent les entraînements et les tournois. Si vous souhaitez vous impliquer (quelque soit votre expérience rugbystique) n’hésitez pas à prendre contact avec nous.</p>
+
+<h3>Recrutement</h3>
+L’école de rugby Les Gaulois accueille continuellement de nouveaux joueurs, quelque soit leur niveau. Le club s'implique également auprès des établissements scolaires de la région afin de contribuer au développement de ce sport.
+
+<p>Si vous êtes intéressés à venir jouer avec nous ou contribuer à la vie de l’école, n’hésitez pas à nous contacter ou à vous inscrire directement sur le site.</p>
+
+<h3>Catégories</h3>
+<div class="w3-third">
+<div class="w3-card-2 w3-hover-shadow">
+  <img src="./images/P1020983.jpg" style="height:200px">
+  <div class="w3-container">
+  <h3>de 5 à 10 ans</h3>
+  <p>Rugby sans contact</p>
+  <p>Participation à des tournois</p>
+  <p>Non compétitif et fun</p>
+  <p>Rigueur, valeurs </p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card-2 w3-hover-shadow">
+  <img src="./images/P1030553.jpg" style="height:200px">
+  <div class="w3-container">
+  <h3>de 11 à 14 ans</h3>
+  <p>Rugby avec contact</p>
+  <p>Participation à des tournois</p>
+  <p>Saison prolongée</p>
+  <p>Solidarité</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card-2 w3-hover-shadow">
+  <img src="./images/DSC03919.jpg" style="height:200px">
+  <div class="w3-container">
+  <h3>15 à 18 ans</h3>
+  <p>Juniors de Montréal</p>
+  <p>participation au championnat provincial</p>
+  <p>sélections pour Rugby Québec</p>
+  <p>Pratiques hivernales</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Inscription Row -->
+<div class="w3-container w3-padding-64 w3-theme-l3" id="inscriptions">
+    <h2>Modalités d'inscription</h2>
+
+    <p>Le club offre la possibilité à tous les jeunes de participer à une initiation gratuite afin de valider son intérêt pour le rugby. Afin de vous informer de la tenue de ces pratiques, nous conseillons aux parents intéressés d'utiliser le <a href="#contact">formulaire de contact du club</a>. </p>
+    <p>Vous pourrez par la suite procéder à l'inscription officiele de votre enfant pour la saison en suivant la procédure suivante :</p>
+    <ul>
+      <li>Remplir le formulaire en ligne « Fiche du joueur » qui se trouve ci-dessous.Nous nous servons de ces informations pour communiquer avec vous. il est important de maintenir vos données à jour dans nos systèmes et de nous informer de tout changement</li>
+      <li>Inscription à Rugby Canada.
+        Cette année les inscriptions officielles pour la saison 2017 se font directement sur le site de Rugby Canada.
+        Les informations nécessaires à l’inscription des Gaulois sont déjà prêtes et vous pouvez donc dès à présent commencer à y inscrire vos enfants.
+        <ul>
+          <li>Inscription Rugby Canada : <a href="http://members.rugbycanada.ca/" target="_blank">http://members.rugbycanada.ca/</a></li>
+        <li>manuel pour les inscriptions au site de rugby canada : <a href="http://assets.ngin.com/attachments/document/0094/9059/Instructions_d_inscriptions_Sport_Ngin.pdf" target="_blank">Instructions inscription francais</a></li></ul></li>
+    </ul>
+
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn-block w3-theme w3-xxlarge w3-hover-teal" title="Fiche détaillée du joueur">Fiche du joueur</button>
+
+<h1>Tranches d’âge pour la saison 2017</h1>
+<table class="w3-table-all w3-centered w3-card-4 w3-hoverable">
+<thead>
+<tr>
+<td><strong><strong>Groupes</strong></strong></td>
+<td><strong>Tranches d’âge</strong></td>
+<td><strong>Né en*</strong></td>
+<td><strong>Licence</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Juniors</td>
+<td>U18</td>
+<td>1999, 2000</td>
+<td>$170</td>
+</tr>
+<tr>
+<td>U16</td>
+<td>2001, 2002</td>
+<td>$170</td>,
+</tr>
+<tr>
+<td rowspan="2">Cadets</td>
+<td>U14</td>
+<td>2003, 2004</td>
+<td>$160</td>
+</tr>
+<tr>
+<td>U12</td>
+<td>2005, 2006</td>
+<td>$145</td>
+</tr>
+<tr>
+<td rowspan="2">Benjamins</td>
+<td>U10</td>
+<td>2007, 2008</td>
+<td>$140</td>
+</tr>
+<tr>
+<td>U8</td>
+<td>2009, 2010</td>
+<td>$130</td>
+</tr>
+<tr>
+<td>Mini</td>
+<td>U6</td>
+<td>2011, 2012</td>
+<td>$100</td>
+</tr>
+</tbody>
+</table>
+<p>*Anniversaire fêté au cours de l’année calendaire.</p>
+<p>ATTENTION: La présence des parents est OBLIGATOIRE pour tout enfant de moins de 6 ans (en fait, cette tranche d’âge ne couvre que les enfants de 5 ans et plus). A cet âge, on a besoin de l’aide de nos parents pour s’intégrer, assimiler certaines règles ou faire une pause lorsque cela est nécessaire. L’enfant de moins de 6 ans doit démontrer des aptitudes pour le sport et un intérêt pour le rugby.<p>
+
+<h3>Validité et dates d’inscription</h3>
+
+<p>Les licences peuvent être contractées à partir du mois de février. Les coûts des licences couvrent l’intégralité de la saison, de la date d'inscription au 30 Avril 2018.</p>
+
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-8 w3-animate-top">
+    <header class="w3-container w3-teal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn"><i class="fa fa-remove"></i></span>
+      <h4>Fiche détaillée du joueur</h4>
+      <h5>Merci de remplir ces informations qui nous serons utiles. Vous pouvez à n'importe quel moment nous demander de vous retirer de la liste de distribution du club. Cette fiche ne remplace pas l'inscription du joueur auprès de Rugby Canada <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <iframe src="https://docs.google.com/forms/d/1dno2QrFbY94cc4QZEbT5h5ogmXXLU01Jv_ijs44TKCE/viewform?embedded=true" width="760" height="1800" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours&amp;#8230;</iframe>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-d5">
+  <div class="w3-row"  id="contact">
+    <div class="w3-col m4">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Nous contacter</span></div>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Montreal, QC, Canada</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +1 514 826 1106</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> info@clubrugbygaulois.com</p>
+      <br>
+      <img class="w3-container w3-margin" src="./images/Logo-Rugby-Gaulois-RVB.png" style="width:100%;">
+    </div>
+    <div class="w3-col m8">
+      <div class="w3-container">
+       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd87uN0GiPaOLaDwTMoTsZGbP3YDB6wNo3NBwQ_lqJBPFkEKw/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours...</iframe>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Google Maps -->
+<div class="w3-container w3-padding-64 w3-theme-d5" id="map" style="width:100%;height:420px;"></div>
+<script src="./javascript/map.js"></script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHlbM_1W20XRMGEu-0zcsaR_yduGDf3PI&callback=initMap"
+ type="text/javascript"></script>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d5 w3-center">
+  <h4>Suivez nous</h4>
+  <a class="w3-btn-floating w3-teal" href="https://www.facebook.com/pages/Les-Gaulois-de-Montr%C3%A9al/349897288407024" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-btn-floating w3-teal" href="https://plus.google.com/+Clubrugbygaulois" title="Google +"><i class="fa fa-google-plus"></i></a>
+
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+    <a class="w3-btn w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+</div>
+
+<div class="w3-col s3">
+
+  <div class="w3-container w3-margin-bottom">
+    <h2>News des Gaulois</h2>
+    	<marquee class="w3-margin-bottom" id="filnews1" data-news="<p>Le calendrier du site des Gaulois comprend les dates des tournois des u6-u14. Le calendrier pour les U16 et U18 sera discuté dans les prochaines semaines</p>" onclick="News(id)" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2"><a id="titre0" class="w3-text-light-green">Le calendrier des jamborées est disponible</a></marquee><br>
+
+      <marquee class="w3-margin-bottom" id="filnews2" data-news="<p>Début officiel pour toutes les catégories le dimanche 23 avril</p><p>Ca se passe au gymnase ou en extérieur si le temps le permet. N'hésitez pas à consulter le calendrier pour les pratiques et matchs. il est à jour</p>" onclick="News(id)" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="3"> <a id="titre1" class="w3-text-light-blue">La saison démarre pour toutes les catégories d'âges le 23 avril 2017</a></marquee>
+
+      	<marquee class="w3-margin-bottom" id="filnews3" data-news="<p>Le site de rugby Canada pour les inscriptions est prêt. Ca se passe ici : http://members.rugbycanada.ca/</p>" onclick="News(id)" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2"><a id="titre0" class="w3-text-orange">Le site d'inscriptions de rugby Canada est prêt</a></marquee>
+
+      <marquee class="w3-margin-bottom" id="filnews4" data-news="<p>Les Gaulois sont fiers d'être partenaire depuis 3 ans de Sport Montréal qui propose des camps d'été option rugby au Complexe Robillard:http://www.sportsmontreal.com/fr/activite/camp-de-jour/camp-option-rugby_196.aspx?page=15&pn=gi%3D28%26cat%3D3</p>" onclick="News(id)" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="3"><a id="titre0" class="w3-text-light-green">Camps d'été option Rugby sur Montréal</a></marquee><br>
+  </div>
+
+  <!-- Modal news-->
+  <div id="idnews" class="w3-modal">
+  <div class="w3-modal-content w3-card-8 w3-animate-top" style="width:400px">
+    <header class="w3-container w3-teal">
+      <span onclick="document.getElementById('idnews').style.display='none'" class="w3-closebtn"><i class="fa fa-remove"></i></span>
+    </header>
+    <div id="newscontent" class="w3-container w3-text-indigo">
+
+    </div>
+  </div>
+  </div>
+
+    <div class="w3-container w3-margin">
+      <a  href="https://www.facebook.com/pg/Les-Gaulois-de-Montr%C3%A9al-349897288407024/photos/?tab=albums" target="_blank">
+        <img src="./images/Photopola1.png" class="rotate15 imagerotate2"  style="width:90%;"></a>
+    </div>
+
+
+
+    <div class="w3-container w3-margin">
+      <a  href="./images/12795027.mp4" target="_blank">
+        <img src="./images/Photopola2.png" class="rotate-15 imagerotate"  style="width:90%;"></a>
+      </div>
+      <div class="w3-container w3-margin">
+        <a  href="http://plus.lapresse.ca/screens/4d322674-53a4-a59e-a37d-028eac1c606a%7CEMq.8sqSqm4Z" target="_blank">
+          <img src="./images/Photopola3.png" class="rotate15 imagerotate2"  style="width:90%;"></a>
+        </div>
+
+        <div class="w3-card-2 w3-hover-shadow">
+          <div class="w3-container">
+            <h3>Les Juniors de Montreal (U16 - U18)</h3>
+            <p>Depuis quelques années le Club de Rugby des Gaulois développe le mouvement Junior avec d’autres clubs de Montreal / Concordia. Le but du regroupement est de fédérer un maximum de joueurs pour assurer des pratiques de qualité et un volume de joueurs permettant de présenter des équipes au championnats et tournois organisés par Rugby Quebec.</p>
+            <p>Pour tout détails sur le Club de Rugby Juniors de Montreal merci de vous rendre sur notre page facebook : <a href="https://www.facebook.com/Club-de-Rugby-Juniors-de-Montr%C3%A9al-1669604979977588/" target="_blank">Site facebook public des Juniors de Montreal</a></p>
+            <p>Si vous avez entre 14 ans et 18 ans et souhaitez jouer avec nous en 2017, merci de demander à joindre notre groupe privé : <a href="https://www.facebook.com/groups/179656822517183" target="_blank">Site facebook privé des Juniors de Montreal</a></p>
+          </div>
+        </div>
+
+        <div class="w3-container w3-left w3-margin w3-hover-shadow">
+          <!-- Facebook Badge START -->
+          <a href="https://www.facebook.com/pages/Les-Gaulois-de-Montr%C3%A9al/349897288407024" title="Les Gaulois de Montréal" target="_TOP"><img class="img" src="https://badge.facebook.com/badge/349897288407024.2392.282911603.png" style="border: 1px;" alt=""></a><!-- Facebook Badge END -->
+        </div>
+        <div class="w3-container w3-right w3-margin w3-hover-shadow">
+          <!-- Facebook Badge START -->
+          <a href="https://www.facebook.com/pages/Club-de-Rugby-Juniors-de-Montr%C3%A9al/1669604979977588" title="Club de Rugby Juniors de Montréal" target="_TOP"><img class="img" src="https://badge.facebook.com/badge/1669604979977588.11141.694073483.png" style="border: 0px;" alt=""></a><!-- Facebook Badge END -->
+
+        </div>
+</div>
+
+
+</body>
+</html>
