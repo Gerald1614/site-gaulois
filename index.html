@@ -7,10 +7,11 @@
 <meta name="keywords" content="rugby, ecole, school, montreal, rookie rugby, quebec">
 <meta name="author" content="Gerald Michelant">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./lib/w3.css">
+
 <link rel="stylesheet" href="./lib/w3-theme-indigo.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="./lib/custom_css.css" />
+<link rel="stylesheet" href="./lib/w3.css">
 <link rel="icon" type="image/png" href="./images/Logo-Rugby-Gaulois-RVB.png" />
 <script src="javascript/index.js"></script>
 </head>
@@ -91,11 +92,11 @@
 </div>
 
 <!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
+<div id="IH" class="w3-display-container w3-animate-opacity">
   <img src="./images/20160925_101348.jpg" alt="les Gaulois à Mont Tremblant" style="width:100%;">
     <img class="w3-display-bottomleft w3-margin-bottom w3-container" src="./images/Logo-Rugby-Gaulois-RVB.png" style="width:20%;">
     <div class="w3-display-topleft w3-card-8 w3-round w3-padding w3-white" style="top:50px">
-    <h4 class="w3-text-indigo" style="margin:0px">Nouvelles du monde (francais) du rugby:</h4>
+    <h3 class="w3-text-indigo" style="margin:0px">Nouvelles du monde (francais) du rugby:</h3>
     <a id="titre0"></a><br><a id="titre1"></a><br><a id="titre2"></a>
     </div>
     <div class="w3-display-topright w3-opacity-min w3-card-8 w3-round w3-padding w3-black rotate15 imagerotate2" style="top:100px">
@@ -107,12 +108,11 @@
       <img class="w3-display-right w3-margin-bottom w3-container" src="./images/sportMontreal.png" style="width:10%;"></a>
     <a  href="http://rookierugby.ca/wp-content/themes/rookierugby/img/rr_vid_french.mp4" target="_blank">
       <img class="w3-display-bottomright w3-margin-bottom w3-container" src="./images/rookie_rugby.png" style="width:20%;"></a>
-  <div class="w3-display-bottommiddle w3-container"><p><b class="w3-indigo  w3-padding w3-text-lime">Plus grande école de rugby francophone d'Amérique du Nord</b></p><q class="w3-myfont w3-text-white w3-xxxlarge "><b>Irréductibles, indivisibles</b></q></div>
+  <div class="w3-display-bottommiddle w3-container"><p><h3 class="w3-indigo  w3-padding w3-text-lime">Plus grande école de rugby francophone d'Amérique du Nord</h3></p><q class="w3-myfont w3-text-white w3-xxxlarge "><b>Irréductibles, indivisibles</b></q></div>
 </div>
 
-<div class="w3-col s9">
-
-
+<div class="w3-row">
+<div class="w3-col m9 s12">
 <!-- rugby Container -->
 <div class="w3-container w3-padding-64 w3-center w3-theme-l2" id="rugby">
 <p>Bienvenue sur le site du club de rugby "Les Gaulois".
@@ -123,7 +123,7 @@ Le rugby est une école de la vie fondée sur le respect des co-équipiers, des 
 <div class="w3-row"><br>
 <div class="w3-quarter">
   <a  href="http://rugbyquebec.com/?page_id=279&lang=fr" target="_blank">Club affilié à :
-  <img src="./images/Logo_Rugby_Québec.png" style="width:70%;"></a>
+  <img src="./images/Logo_Rugby_Québec.png" style="width:50%;"></a>
 </div>
 <div class="w3-half">
 <iframe width="100%" src="https://www.youtube.com/embed/NK9mRb3y2IU?feature=oembed&amp;enablejsapi=1&amp;origin=http://clubrugbygaulois.com" frameborder="0" allowfullscreen="" id="ba_yt_0"></iframe>
@@ -319,23 +319,10 @@ L’école de rugby Les Gaulois accueille continuellement de nouveaux joueurs, q
  type="text/javascript"></script>
 
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d5 w3-center">
-  <h4>Suivez nous</h4>
-  <a class="w3-btn-floating w3-teal" href="https://www.facebook.com/pages/Les-Gaulois-de-Montr%C3%A9al/349897288407024" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-btn-floating w3-teal" href="https://plus.google.com/+Clubrugbygaulois" title="Google +"><i class="fa fa-google-plus"></i></a>
 
-
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
-    <a class="w3-btn w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
 </div>
 
-<div class="w3-col s3">
-
+<div class="w3-col m3 s12">
   <div class="w3-container w3-margin-bottom">
     <h2>News des Gaulois</h2>
     	<marquee class="w3-margin-bottom" id="filnews1" data-news="<p>Le calendrier du site des Gaulois comprend les dates des tournois des u6-u14. Le calendrier pour les U16 et U18 sera discuté dans les prochaines semaines</p>" onclick="News(id)" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2"><a id="titre0" class="w3-text-light-green">Le calendrier des jamborées est disponible</a></marquee><br>
@@ -394,7 +381,21 @@ L’école de rugby Les Gaulois accueille continuellement de nouveaux joueurs, q
 
         </div>
 </div>
+</div>
+<div class="w3-row">
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d5 w3-center">
+  <h4>Suivez nous</h4>
+  <a class="w3-btn-floating w3-teal" href="https://www.facebook.com/pages/Les-Gaulois-de-Montr%C3%A9al/349897288407024" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-btn-floating w3-teal" href="https://plus.google.com/+Clubrugbygaulois" title="Google +"><i class="fa fa-google-plus"></i></a>
 
 
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+    <a class="w3-btn w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+</div>
 </body>
 </html>
