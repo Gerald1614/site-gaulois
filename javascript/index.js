@@ -1,11 +1,4 @@
 
-function News(id) {
-  var filnews = document.getElementById(id);
-var content = filnews.getAttribute("data-news");
-document.getElementById('newscontent').innerHTML=content;
-document.getElementById('idnews').style.display='block';
-}
-
 // Used to toggle the menu on smaller  screens when clicking on the menu button
 function openNav() {
     var x = document.getElementById("navDemo");

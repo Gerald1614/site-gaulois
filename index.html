@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 <title>Club de rugby des Gaulois</title>
 <meta charset="UTF-8">
@@ -13,6 +13,7 @@
 <link rel="stylesheet" type="text/css" href="./lib/custom_css.css" />
 <link rel="stylesheet" href="./lib/w3.css">
 <link rel="icon" type="image/png" href="./images/Logo-Rugby-Gaulois-RVB.png" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="javascript/index.js"></script>
 </head>
 <body id="myPage" class="w3-theme-d4">
@@ -72,7 +73,7 @@
   <h2>Déroulement de la saison</h2>
   </header>
   <div class="w3-container">
-    <iframe src="./saison.html" width="100%" height="1700" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours&amp;#8230;</iframe>
+    <iframe src="./saison.html" style="width:100%; height:1700px; frameborder:0px; marginheight:0px; marginwidth:0px;"></iframe>
   </div>
 </div>
 </div>
@@ -85,7 +86,7 @@
     <span onclick="document.getElementById('idcalendrier').style.display='none'" class="w3-closebtn"><i class="fa fa-remove"></i></span>
   </header>
   <div class="w3-container">
-    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ece6ipuodm91t02ogq8ja2ldbcedig1p%40import.calendar.google.com&amp;color=%23711616&amp;src=5c68o9dlpflkh1m9a5psiosv5s%40group.calendar.google.com&amp;color=%232F6309&amp;src=bnuee0091b9ug10bqvmvhk94s0%40group.calendar.google.com&amp;color=%238C500B&amp;src=ljvgphvgdafksm3g5iur30vl78%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FToronto" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ece6ipuodm91t02ogq8ja2ldbcedig1p%40import.calendar.google.com&amp;color=%23711616&amp;src=5c68o9dlpflkh1m9a5psiosv5s%40group.calendar.google.com&amp;color=%232F6309&amp;src=bnuee0091b9ug10bqvmvhk94s0%40group.calendar.google.com&amp;color=%238C500B&amp;src=ljvgphvgdafksm3g5iur30vl78%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FToronto" style="width:100%; height:600px; border-width:0; frameborder:0px; scrolling:no;"></iframe>
 
   </div>
 </div>
@@ -94,7 +95,7 @@
 <!-- Image Header -->
 <div id="IH" class="w3-display-container w3-animate-opacity">
   <img src="./images/20160925_101348.jpg" alt="les Gaulois à Mont Tremblant" style="width:100%;">
-    <img class="w3-display-bottomleft w3-margin-bottom w3-container" src="./images/Logo-Rugby-Gaulois-RVB.png" style="width:20%;">
+    <img class="w3-display-bottomleft w3-margin-bottom w3-container" alt="logo Gaulois" src="./images/Logo-Rugby-Gaulois-RVB.png" style="width:20%;">
     <div class="w3-display-topleft w3-hide-small w3-card-8 w3-round w3-padding w3-white" style="top:50px">
     <h3 class="w3-text-indigo" style="margin:0px">Nouvelles du monde (francais) du rugby:</h3>
     <a id="titre0"></a><br><a id="titre1"></a><br><a id="titre2"></a>
@@ -105,9 +106,9 @@
       <p><h3>Filles et gars âgés de 5 à 18 ans</h3></p>
     </div>
     <a  href="http://www.sportsmontreal.com/fr/activite/camp-de-jour/camp-option-rugby_196.aspx?page=15&pn=gi%3D28%26cat%3D3" target="_blank">
-      <img class="w3-display-right w3-margin-bottom w3-container" src="./images/sportMontreal.png" style="width:10%;"></a>
+      <img class="w3-display-right w3-margin-bottom w3-container"  alt="sport Montreal" src="./images/sportMontreal.png" style="width:10%;"></a>
     <a  href="http://rookierugby.ca/wp-content/themes/rookierugby/img/rr_vid_french.mp4" target="_blank">
-      <img class="w3-display-bottomright w3-margin-bottom w3-container" src="./images/rookie_rugby.png" style="width:20%;"></a>
+      <img class="w3-display-bottomright w3-margin-bottom w3-container"  alt="Rookie Rugby" src="./images/rookie_rugby.png" style="width:20%;"></a>
   <div class="w3-display-middle "><p><h3 class="w3-indigo  w3-padding w3-text-lime">Plus grande école de rugby francophone d'Amérique du Nord</h3></p></div>
   <div class="w3-display-bottommiddle "><q class="w3-myfont w3-text-white "><b>Irréductibles, indivisibles</b></q></div>
 </div>
@@ -124,14 +125,14 @@ Le rugby est une école de la vie fondée sur le respect des co-équipiers, des 
 <div class="w3-row"><br>
 <div class="w3-quarter">
   <a  href="http://rugbyquebec.com/?page_id=279&lang=fr" target="_blank">Club affilié à :
-  <img src="./images/Logo_Rugby_Québec.png" style="width:50%;"></a>
+  <img src="./images/Logo_Rugby_Québec.png"  alt="rugby Quebec" style="width:50%;"></a>
 </div>
 <div class="w3-half">
-<iframe width="100%" src="https://www.youtube.com/embed/NK9mRb3y2IU?feature=oembed&amp;enablejsapi=1&amp;origin=http://clubrugbygaulois.com" frameborder="0" allowfullscreen="" id="ba_yt_0"></iframe>
+<iframe style="width:100%; frameborder:0px;" src="https://www.youtube.com/embed/NK9mRb3y2IU?feature=oembed&amp;enablejsapi=1&amp;origin=http://clubrugbygaulois.com"  allowfullscreen id="ba_yt_0"></iframe>
 </div>
 <div class="w3-quarter">
   <a  href="http://www.rugbycanada.ca/leagues/homeRugbyCanada.cfm?leagueID=0&clientID=3817&link=RugbyCanada" target="_blank">
-  <img src="./images/Rugby_Canada1_small.png" style="width:100%;"></a>
+  <img src="./images/Rugby_Canada1_small.png"  alt="rugby Canada" style="width:100%;"></a>
 </div>
 </div>
 </div>
@@ -158,7 +159,7 @@ L’école de rugby Les Gaulois accueille continuellement de nouveaux joueurs, q
 <h3>Catégories</h3>
 <div class="w3-third">
 <div class="w3-card-2 w3-hover-shadow">
-  <img src="./images/P1020983.jpg" style="height:200px">
+  <img src="./images/P1020983.jpg"  alt="5 a 10 ans" style="height:200px">
   <div class="w3-container">
   <h3>de 5 à 10 ans</h3>
   <p>Rugby sans contact</p>
@@ -171,7 +172,7 @@ L’école de rugby Les Gaulois accueille continuellement de nouveaux joueurs, q
 
 <div class="w3-third">
 <div class="w3-card-2 w3-hover-shadow">
-  <img src="./images/P1030553.jpg" style="height:200px">
+  <img src="./images/P1030553.jpg"  alt="11 a 14 ans" style="height:200px">
   <div class="w3-container">
   <h3>de 11 à 14 ans</h3>
   <p>Rugby avec contact</p>
@@ -184,7 +185,7 @@ L’école de rugby Les Gaulois accueille continuellement de nouveaux joueurs, q
 
 <div class="w3-third">
 <div class="w3-card-2 w3-hover-shadow">
-  <img src="./images/DSC03919.jpg" style="height:200px">
+  <img src="./images/DSC03919.jpg"  alt="Juniors" style="height:200px">
   <div class="w3-container">
   <h3>15 à 18 ans</h3>
   <p>Juniors de Montréal</p>
@@ -235,7 +236,7 @@ L’école de rugby Les Gaulois accueille continuellement de nouveaux joueurs, q
 <tr>
 <td>U16</td>
 <td>2001, 2002</td>
-<td>$170</td>,
+<td>$170</td>
 </tr>
 <tr>
 <td rowspan="2">Cadets</td>
@@ -284,7 +285,7 @@ L’école de rugby Les Gaulois accueille continuellement de nouveaux joueurs, q
       <h5>Merci de remplir ces informations qui nous serons utiles. Vous pouvez à n'importe quel moment nous demander de vous retirer de la liste de distribution du club. Cette fiche ne remplace pas l'inscription du joueur auprès de Rugby Canada <i class="fa fa-smile-o"></i></h5>
     </header>
     <div class="w3-container">
-      <iframe src="https://docs.google.com/forms/d/1dno2QrFbY94cc4QZEbT5h5ogmXXLU01Jv_ijs44TKCE/viewform?embedded=true" width="760" height="1800" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours&amp;#8230;</iframe>
+      <iframe src="https://docs.google.com/forms/d/1dno2QrFbY94cc4QZEbT5h5ogmXXLU01Jv_ijs44TKCE/viewform?embedded=true" style="width:100%; height:1800px; frameborder:0px; marginheight:0; marginwidth:0px"></iframe>
     </div>
   </div>
 </div>
@@ -302,11 +303,11 @@ L’école de rugby Les Gaulois accueille continuellement de nouveaux joueurs, q
       <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +1 514 826 1106</p>
       <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> info@clubrugbygaulois.com</p>
       <br>
-      <img class="w3-container w3-margin" src="./images/Logo-Rugby-Gaulois-RVB.png" style="width:100%;">
+      <img class="w3-container w3-margin" alt="logo- Gaulois" src="./images/Logo-Rugby-Gaulois-RVB.png" style="width:100%;">
     </div>
     <div class="w3-col m8">
       <div class="w3-container">
-       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd87uN0GiPaOLaDwTMoTsZGbP3YDB6wNo3NBwQ_lqJBPFkEKw/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours...</iframe>
+       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd87uN0GiPaOLaDwTMoTsZGbP3YDB6wNo3NBwQ_lqJBPFkEKw/viewform?embedded=true" style="width:100%; height:1260px; frameborder:0px; marginheight:0px; marginwidth:0px;"></iframe>
     </div>
     </div>
   </div>
@@ -326,41 +327,25 @@ L’école de rugby Les Gaulois accueille continuellement de nouveaux joueurs, q
 <div class="w3-col m3 s12">
   <div class="w3-container w3-margin-bottom">
     <h2>News des Gaulois</h2>
-    	<marquee class="w3-margin-bottom" id="filnews1" data-news="<p>Le calendrier du site des Gaulois comprend les dates des tournois des u6-u14. Le calendrier pour les U16 et U18 sera discuté dans les prochaines semaines</p>" onclick="News(id)" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2"><a id="titre0" class="w3-text-light-green">Le calendrier des jamborées est disponible</a></marquee><br>
+      <div class="tooltip w3-container w3-margin">Festival RSEQ 2017<span class="tooltiptext">Première participation du rugby au Festival du Réseau des Sports du Québec qui s'est déroulé le 5 mai 2017. <a href="https://www.facebook.com/pg/Association-R%C3%A9gionale-de-Rugby-de-Montr%C3%A9al-763859553762677/photos/?tab=album&album_id=852815931533705" target="_blank">lien de l'événement et des photos :</a> </span></div><br>
+      <div class="tooltip w3-containerw3-margin">Camps d'été option Rugby sur Montréal<span class="tooltiptext">Les Gaulois sont fiers d'être partenaire depuis 3 ans de Sport Montréal qui propose des <a href="http://www.sportsmontreal.com/fr/activite/camp-de-jour/camp-option-rugby_196.aspx?page=15&pn=gi%3D28%26cat%3D3" target="_blank">camps d'été option rugby</a> au Complexe Robillard:</span></div><br>
 
-      <marquee class="w3-margin-bottom" id="filnews2" data-news="<p>Première participation du rugby au Festival du Réseau des Sports du Québec qui s'est déroulé le 5 mai 2017. voici le lien de l'événement et des photos : https://www.facebook.com/pg/Association-R%C3%A9gionale-de-Rugby-de-Montr%C3%A9al-763859553762677/photos/?tab=album&album_id=852815931533705</p>" onclick="News(id)" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="3"> <a id="titre1" class="w3-text-light-blue">Festival RSEQ 2017</a></marquee>
-
-      	<marquee class="w3-margin-bottom" id="filnews3" data-news="<p>Le site de rugby Canada pour les inscriptions est prêt. Ca se passe ici : http://members.rugbycanada.ca/</p>" onclick="News(id)" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2"><a id="titre0" class="w3-text-orange">Le site d'inscriptions de rugby Canada est prêt</a></marquee>
-
-      <marquee class="w3-margin-bottom" id="filnews4" data-news="<p>Les Gaulois sont fiers d'être partenaire depuis 3 ans de Sport Montréal qui propose des camps d'été option rugby au Complexe Robillard:http://www.sportsmontreal.com/fr/activite/camp-de-jour/camp-option-rugby_196.aspx?page=15&pn=gi%3D28%26cat%3D3</p>" onclick="News(id)" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="3"><a id="titre0" class="w3-text-light-green">Camps d'été option Rugby sur Montréal</a></marquee><br>
   </div>
 
-  <!-- Modal news-->
-  <div id="idnews" class="w3-modal">
-  <div class="w3-modal-content w3-card-8 w3-animate-top" style="width:400px">
-    <header class="w3-container w3-teal">
-      <span onclick="document.getElementById('idnews').style.display='none'" class="w3-closebtn"><i class="fa fa-remove"></i></span>
-    </header>
-    <div id="newscontent" class="w3-container w3-text-indigo">
 
-    </div>
-  </div>
-  </div>
-
-    <div class="w3-container w3-margin">
+    <div class="photo w3-container">
       <a  href="https://www.facebook.com/pg/Les-Gaulois-de-Montr%C3%A9al-349897288407024/photos/?tab=albums" target="_blank">
-        <img src="./images/Photopola1.png" class="rotate15 imagerotate2"  style="width:90%;"></a>
+        <img src="./images/Photopola1.png" alt="Photos facebook" class="rotate15 imagerotate2"  style="width:90%;"></a>
     </div>
 
 
-
-    <div class="w3-container w3-margin">
+    <div class="photo w3-container">
       <a  href="./images/12795027.mp4" target="_blank">
-        <img src="./images/Photopola2.png" class="rotate-15 imagerotate"  style="width:90%;"></a>
+        <img src="./images/Photopola2.png" alt="les gaulois a TF1" class="rotate-15 imagerotate"  style="width:90%;"></a>
       </div>
-      <div class="w3-container w3-margin">
+      <div class="photo w3-container">
         <a  href="http://plus.lapresse.ca/screens/4d322674-53a4-a59e-a37d-028eac1c606a%7CEMq.8sqSqm4Z" target="_blank">
-          <img src="./images/Photopola3.png" class="rotate15 imagerotate2"  style="width:90%;"></a>
+          <img src="./images/Photopola3.png" alt="Les gaulois dans la presse" class="rotate15 imagerotate2"  style="width:90%;"></a>
         </div>
 
         <div class="w3-card-2 w3-hover-shadow">

@@ -2,10 +2,9 @@
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-marquee {
-    cursor:pointer;
+.photo{
+  margin-top: 40px;
 }
-
 /* mouse over link */
 a:hover {
     color: red;
@@ -186,4 +185,33 @@ time {
     border-width: 8px 16px 8px 0;
     border-color: transparent #F45B69 transparent transparent;
   }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #000000;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 100%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext:hover {
+    visibility: visible;
 }
