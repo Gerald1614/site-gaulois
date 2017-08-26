@@ -13,7 +13,6 @@
 <link rel="stylesheet" type="text/css" href="./lib/custom_css.css" />
 <link rel="stylesheet" href="./lib/w3.css">
 <link rel="icon" type="image/png" href="./images/Logo-Rugby-Gaulois-RVB.png" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="javascript/index.js"></script>
 </head>
 <body id="myPage" class="w3-theme-d4">
@@ -116,7 +115,7 @@
 <div class="w3-row">
 <div class="w3-col m9 s12">
 <!-- rugby Container -->
-<div class="w3-container w3-padding-64 w3-center w3-theme-l2" id="rugby">
+<div class="w3-container w3-padding-64 w3-center w3-theme-l3" id="rugby">
 <p>Bienvenue sur le site du club de rugby "Les Gaulois".
 Nous accueillons des jeunes (filles et garçons) de 5 à 18 ans afin de les initier à ce sport qui devient de plus en plus populaire tant au niveau international que provincial. Le nombre de licenciés ne cesse de croître au Québec et le club de rugby Les Gaulois participe activement à ce développement depuis de nombreuses années.
 
@@ -299,11 +298,13 @@ L’école de rugby Les Gaulois accueille continuellement de nouveaux joueurs, q
   <div class="w3-row"  id="contact">
     <div class="w3-col m4">
     <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Nous contacter</span></div>
+    <address>
       <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Montreal, QC, Canada</p>
       <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +1 514 826 1106</p>
       <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> info@clubrugbygaulois.com</p>
       <br>
-      <img class="w3-container w3-margin" alt="logo- Gaulois" src="./images/Logo-Rugby-Gaulois-RVB.png" style="width:100%;">
+    </address>
+      <img class="w3-container w3-margin" alt="logo- Gaulois" src="./images/Logo-Rugby-Gaulois-RVB.png" style="width:80%;">
     </div>
     <div class="w3-col m8">
       <div class="w3-container">
@@ -320,17 +321,24 @@ L’école de rugby Les Gaulois accueille continuellement de nouveaux joueurs, q
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHlbM_1W20XRMGEu-0zcsaR_yduGDf3PI&callback=initMap"
  type="text/javascript"></script>
 
-
-
 </div>
 
+<!-- begining of side column -->
 <div class="w3-col m3 s12">
-  <div class="w3-container w3-margin-bottom">
-    <h2>News des Gaulois</h2>
-      <div class="tooltip w3-container w3-margin">Festival RSEQ 2017<span class="tooltiptext">Première participation du rugby au Festival du Réseau des Sports du Québec qui s'est déroulé le 5 mai 2017. <a href="https://www.facebook.com/pg/Association-R%C3%A9gionale-de-Rugby-de-Montr%C3%A9al-763859553762677/photos/?tab=album&album_id=852815931533705" target="_blank">lien de l'événement et des photos :</a> </span></div><br>
-      <div class="tooltip w3-containerw3-margin">Camps d'été option Rugby sur Montréal<span class="tooltiptext">Les Gaulois sont fiers d'être partenaire depuis 3 ans de Sport Montréal qui propose des <a href="http://www.sportsmontreal.com/fr/activite/camp-de-jour/camp-option-rugby_196.aspx?page=15&pn=gi%3D28%26cat%3D3" target="_blank">camps d'été option rugby</a> au Complexe Robillard:</span></div><br>
 
-  </div>
+  <div class="h-feed  w3-container w3-margin-bottom">
+    <h2>News des Gaulois</h2>
+  <article class="h-entry">
+    <h3>Festival RSEQ 2017</h3>
+    <p>Première participation du rugby au Festival du Réseau des Sports du Québec qui s'est déroulé le 5 mai 2017. <a href="https://www.facebook.com/pg/Association-R%C3%A9gionale-de-Rugby-de-Montr%C3%A9al-763859553762677/photos/?tab=album&album_id=852815931533705" target ="_blank";>lien de l'événement et des photos</a></p>
+  </article>
+
+  <article class="h-entry">
+    <h3>Camps d'été option Rugby sur Montréal</h3>
+    <p>Les Gaulois sont fiers d'être partenaire depuis 3 ans de Sport Montréal qui propose des <a href="http://www.sportsmontreal.com/fr/activite/camp-de-jour/camp-option-rugby_196.aspx?page=15&pn=gi%3D28%26cat%3D3" target="_blank";>camps d'été option rugby</a> au Complexe Robillard</p>
+  </article>
+
+</div>
 
 
     <div class="photo w3-container">
@@ -350,7 +358,7 @@ L’école de rugby Les Gaulois accueille continuellement de nouveaux joueurs, q
 
         <div class="w3-card-2 w3-hover-shadow">
           <div class="w3-container">
-            <h3>Les Juniors de Montreal (U16 - U18)</h3>
+            <h3 class="w3-text-orange">Les Juniors de Montreal (U16 - U18)</h3>
             <p>Depuis quelques années le Club de Rugby des Gaulois développe le mouvement Junior avec d’autres clubs de Montreal / Concordia. Le but du regroupement est de fédérer un maximum de joueurs pour assurer des pratiques de qualité et un volume de joueurs permettant de présenter des équipes au championnats et tournois organisés par Rugby Quebec.</p>
             <p>Pour tout détails sur le Club de Rugby Juniors de Montreal merci de vous rendre sur notre page facebook : <a href="https://www.facebook.com/Club-de-Rugby-Juniors-de-Montr%C3%A9al-1669604979977588/" target="_blank">Site facebook public des Juniors de Montreal</a></p>
             <p>Si vous avez entre 14 ans et 18 ans et souhaitez jouer avec nous en 2017, merci de demander à joindre notre groupe privé : <a href="https://www.facebook.com/groups/179656822517183" target="_blank">Site facebook privé des Juniors de Montreal</a></p>
